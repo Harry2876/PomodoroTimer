@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pitchblack"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/settingsbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/transparent"
+        app:icon="@drawable/settings"
+        app:iconPadding="0dp"
+        app:iconSize="40dp"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundimg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:rotation="90"
+        android:text="00:00:00"
+        android:textColor="@color/white"
+        android:textSize="85sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/fullscreenbtn"
+        android:layout_width="53dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="52dp"
+        android:background="#00FFFFFF"
+        android:drawableStart="@drawable/toggle_icon"
+        android:textOff=" "
+        android:textOn=" "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="50dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="@color/transparent"
+        android:rotation="90"
+        app:icon="@drawable/resetbtn"
+        app:iconGravity="textEnd"
+        app:iconPadding="0dp"
+        app:iconSize="55dp"
+        app:iconTint="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/backgroundimg"
+        app:layout_constraintTop_toTopOf="@+id/timertxt" />
+
+    <ToggleButton
+        android:id="@+id/togglebtn"
+        style="@android:style/Widget.Button"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-10dp"
+        android:background="@drawable/button_background"
+        android:checked="false"
+        android:fontFamily="@font/poppins_semibold"
+        android:rotation="90"
+        android:textColor="@color/white"
+        android:textOff="Start"
+        android:textOn="Stop"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timertxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timertxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

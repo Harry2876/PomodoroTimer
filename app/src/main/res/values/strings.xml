@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PomodoroTimer</string>
+    <string-array name="background_options">
+        <item>cafe</item>
+        <item>crossing</item>
+        <item>street_view</item>
+        <item>tree_valey</item>
+    </string-array>
+
+</resources>
